@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "revision": "e1e0e87a-b0b5-5db8-9512-a092118d83c7",
+  "title": "Solé — Odontologia",
+  "files": [
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "styles.css"
+    },
+    {
+      "path": "script.js"
+    }
+  ]
+}
