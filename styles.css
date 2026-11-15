@@ -154,3 +154,7 @@ header .brand{display:flex;align-items:center;flex-shrink:0}
 @media(prefers-reduced-motion:reduce){.portrait-badge{translate:none}.portrait-badge-body{animation:none}}
 
 .portrait-badge-body>span:last-child{white-space:nowrap}
+
+.clinic-director{padding:18px 20px;margin-top:28px;border-left:3px solid #286A91;background:#EDF4F8;color:#17384C;border-radius:0 6px 6px 0}
+.clinic-director strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#286A91;margin-bottom:6px}
+.clinic-director span{display:block;font-size:17px;font-weight:700;line-height:1.5}
