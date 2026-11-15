@@ -138,3 +138,19 @@ header .brand{display:flex;align-items:center;flex-shrink:0}
 .contact-map>a:hover{text-decoration:underline}
 .contact-layout .contact-details{grid-column:1/-1;width:100%;margin-top:0}
 @media(max-width:900px){.contact-layout{grid-template-columns:1fr;gap:32px}.contact-map iframe{height:280px}.contact-layout .contact-details{grid-column:auto}}
+
+/* Selos de vidro flutuantes ao redor do retrato. */
+.hero-portrait-wrap{position:relative;align-self:stretch;min-width:0}
+.portrait-badges{position:absolute;inset:0;z-index:3;pointer-events:none}
+.portrait-badge{position:absolute;translate:var(--badge-x,0px) var(--badge-y,0px)}
+.portrait-badge--1{top:32%;right:0}
+.portrait-badge--2{bottom:22%;left:0}
+.portrait-badge-body{display:flex;align-items:center;gap:12px;padding:8px 20px 8px 8px;border:1px solid rgba(255,255,255,.65);border-radius:999px;background:rgba(255,255,255,.78);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);color:#17384C;font-size:13px;font-weight:600;line-height:1.3;box-shadow:0 12px 32px rgba(8,28,42,.18),inset 0 1px rgba(255,255,255,.7);animation:portrait-badge-float 5s ease-in-out infinite alternate}
+.portrait-badge--2 .portrait-badge-body{animation-delay:-2.5s;animation-duration:6s}
+.portrait-badge-icon{display:grid;place-items:center;width:40px;height:40px;flex:none;border-radius:50%;color:#286A91;background:rgba(255,255,255,.85);box-shadow:inset 0 0 0 1px #D5E5EF}
+.portrait-badge-icon svg{width:20px;height:20px}
+@keyframes portrait-badge-float{from{transform:translateY(-6px) rotate(-1deg)}to{transform:translateY(6px) rotate(1deg)}}
+@media(max-width:760px){.hero-portrait-wrap{width:100%;max-width:480px;justify-self:center}.portrait-badge--1{top:36%;right:0}.portrait-badge--2{left:0;bottom:20%}.portrait-badge-body{font-size:11px;gap:8px;padding:6px 12px 6px 6px}.portrait-badge-icon{width:30px;height:30px}.portrait-badge-icon svg{width:16px;height:16px}}
+@media(prefers-reduced-motion:reduce){.portrait-badge{translate:none}.portrait-badge-body{animation:none}}
+
+.portrait-badge-body>span:last-child{white-space:nowrap}
