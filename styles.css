@@ -158,11 +158,3 @@ header .brand{display:flex;align-items:center;flex-shrink:0}
 .clinic-director{padding:18px 20px;margin-top:28px;border-left:3px solid #286A91;background:#EDF4F8;color:#17384C;border-radius:0 6px 6px 0}
 .clinic-director strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#286A91;margin-bottom:6px}
 .clinic-director span{display:block;font-size:17px;font-weight:700;line-height:1.5}
-
-/* Equilibra as fotos com o texto ampliado da clínica no computador. */
-@media(min-width:981px){
- .clinic-about-layout{align-items:center}
- .clinic-photos{align-self:center}
- .clinic-photo-stack{max-width:490px;aspect-ratio:4/5.8}
- .clinic-photo-card{height:90%}
-}
